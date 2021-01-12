@@ -53,10 +53,10 @@ Feature: Test Progress chart on Onboarding UI.
     Then Required task progress chart should display correct <Percentage>
 
     Examples: 
-      | number        | Percentage  											|
-      | 0			        |     0%			 											|
-      | total number  |    100%     											|
-      | random number | random number/total number *100%  |
+      | number        | Percentage  														 |
+      | 0			        | 0%			 														 		 |
+      | total number  | 100%     											       	 	 |
+      | random number | Round(random number/total number) *100%  |
   
   @OptionalTasks
   Scenario: Count Optional task numbers 
